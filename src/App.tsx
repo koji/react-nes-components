@@ -3,6 +3,8 @@ import React from 'react';
 // import './App.css';
 import { NesList } from './List';
 import { NesText } from './Text';
+import { NesSNSIcon } from './SNSIcons';
+
 const contents = ["hell", "nes", "components", "test"];
 const App: React.FC = () => {
   return (
@@ -42,6 +44,56 @@ const App: React.FC = () => {
           textType={"disabled"}
           content={"Hello NES.css error disabled"}
           fontSize={20}
+        />
+      </div>
+      <div style={{ margin: "30px" }}>
+        <NesSNSIcon
+          snsType={"twitter"}
+          iconSize={"medium"}
+        />
+        <NesSNSIcon
+          snsType={"facebook"}
+          iconSize={"medium"}
+        />
+        <NesSNSIcon
+          snsType={"instagram"}
+          iconSize={"medium"}
+        />
+        <NesSNSIcon
+          snsType={"github"}
+          iconSize={"medium"}
+        />
+        <NesSNSIcon
+          snsType={"google"}
+          iconSize={"medium"}
+        />
+        <NesSNSIcon
+          snsType={"gmail"}
+          iconSize={"medium"}
+        />
+        <NesSNSIcon
+          snsType={"medium"}
+          iconSize={"medium"}
+        />
+        <NesSNSIcon
+          snsType={"linkedin"}
+          iconSize={"medium"}
+        />
+        <NesSNSIcon
+          snsType={"twitch"}
+          iconSize={"medium"}
+        />
+        <NesSNSIcon
+          snsType={"youtube"}
+          iconSize={"medium"}
+        />
+        <NesSNSIcon
+          snsType={"reddit"}
+          iconSize={"medium"}
+        />
+        <NesSNSIcon
+          snsType={"whatsapp"}
+          iconSize={"medium"}
         />
       </div>
 
