@@ -4,24 +4,22 @@ import React from 'react';
 import { NesList } from './List';
 import { NesText } from './Text';
 import { NesSNSIcon } from './SNSIcons';
+import { NesButton } from './Button';
 
 const contents = ["hell", "nes", "components", "test"];
 const App: React.FC = () => {
   return (
     <div className="App">
-      <div style={{margin: "30px"}}>
-        <NesList
-          items={contents}
-          isDisc={false}
-        />
+      <div style={{ margin: "30px" }}>
+        <NesList items={contents} isDisc={false} />
       </div>
-      <div style={{margin: "30px"}}>
+      <div style={{ margin: "30px" }}>
         <NesText
           textType={"primary"}
           content={"Hello NES.css primary"}
           fontSize={20}
         />
-        <br/>
+        <br />
         <NesText
           textType={"success"}
           content={"Hello NES.css success"}
@@ -47,56 +45,22 @@ const App: React.FC = () => {
         />
       </div>
       <div style={{ margin: "30px" }}>
-        <NesSNSIcon
-          snsType={"twitter"}
-          iconSize={"medium"}
-        />
-        <NesSNSIcon
-          snsType={"facebook"}
-          iconSize={"medium"}
-        />
-        <NesSNSIcon
-          snsType={"instagram"}
-          iconSize={"medium"}
-        />
-        <NesSNSIcon
-          snsType={"github"}
-          iconSize={"medium"}
-        />
-        <NesSNSIcon
-          snsType={"google"}
-          iconSize={"medium"}
-        />
-        <NesSNSIcon
-          snsType={"gmail"}
-          iconSize={"medium"}
-        />
-        <NesSNSIcon
-          snsType={"medium"}
-          iconSize={"medium"}
-        />
-        <NesSNSIcon
-          snsType={"linkedin"}
-          iconSize={"medium"}
-        />
-        <NesSNSIcon
-          snsType={"twitch"}
-          iconSize={"medium"}
-        />
-        <NesSNSIcon
-          snsType={"youtube"}
-          iconSize={"medium"}
-        />
-        <NesSNSIcon
-          snsType={"reddit"}
-          iconSize={"medium"}
-        />
-        <NesSNSIcon
-          snsType={"whatsapp"}
-          iconSize={"medium"}
-        />
+        <NesSNSIcon snsType={"twitter"} iconSize={"medium"} />
+        <NesSNSIcon snsType={"facebook"} iconSize={"medium"} />
+        <NesSNSIcon snsType={"instagram"} iconSize={"medium"} />
+        <NesSNSIcon snsType={"github"} iconSize={"medium"} />
+        <NesSNSIcon snsType={"google"} iconSize={"medium"} />
+        <NesSNSIcon snsType={"gmail"} iconSize={"medium"} />
+        <NesSNSIcon snsType={"medium"} iconSize={"medium"} />
+        <NesSNSIcon snsType={"linkedin"} iconSize={"medium"} />
+        <NesSNSIcon snsType={"twitch"} iconSize={"medium"} />
+        <NesSNSIcon snsType={"youtube"} iconSize={"medium"} />
+        <NesSNSIcon snsType={"reddit"} iconSize={"medium"} />
+        <NesSNSIcon snsType={"whatsapp"} iconSize={"medium"} />
       </div>
-
+      <div style={{ margin: "30px" }}>
+        <NesButton buttonType={"primary"} label={"primary"}/>
+      </div>
     </div>
   );
 }
