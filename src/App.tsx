@@ -7,15 +7,43 @@ const contents = ["hell", "nes", "components", "test"];
 const App: React.FC = () => {
   return (
     <div className="App">
-      <NesList
-        items={contents}
-        isDisc={false}
-      />
-      <NesText
-        textType={"primary"}
-        content={"Hello NES.css"}
-        fontSize={30}
-    />
+      <div style={{margin: "30px"}}>
+        <NesList
+          items={contents}
+          isDisc={false}
+        />
+      </div>
+      <div style={{margin: "30px"}}>
+        <NesText
+          textType={"primary"}
+          content={"Hello NES.css primary"}
+          fontSize={30}
+        />
+        <br/>
+        <NesText
+          textType={"success"}
+          content={"Hello NES.css success"}
+          fontSize={30}
+        />
+        <br />
+        <NesText
+          textType={"warning"}
+          content={"Hello NES.css warning"}
+          fontSize={30}
+        />
+        <br />
+        <NesText
+          textType={"error"}
+          content={"Hello NES.css error"}
+          fontSize={30}
+        />
+        <br />
+        <NesText
+          textType={"disabled"}
+          content={"Hello NES.css error disabled"}
+          fontSize={30}
+        />
+      </div>
 
     </div>
   );
