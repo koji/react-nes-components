@@ -3,7 +3,7 @@ import 'nes.css';
 
 type Props = {};
 
-export class Dropdown extends React.Component<Props> {
+export class NesDropdown extends React.Component<Props> {
   render() {
     return (
       <div></div>
