@@ -5,6 +5,7 @@ import { NesList } from './List';
 import { NesText } from './Text';
 import { NesSNSIcon } from './SNSIcons';
 import { NesButton } from './Button';
+import { NesProgress } from './Progress';
 
 const contents = ["hell", "nes", "components", "test"];
 const App: React.FC = () => {
@@ -59,7 +60,12 @@ const App: React.FC = () => {
         <NesSNSIcon snsType={"whatsapp"} iconSize={"medium"} />
       </div>
       <div style={{ margin: "30px" }}>
-        <NesButton buttonType={"primary"} label={"primary"}/>
+        <NesButton buttonType={"primary"} label={"primary"} />
+        <NesButton label={"normal"} />
+      </div>
+      <div style={{ margin: "30px" }}>
+        <NesProgress barType={"primary"} value={50} max={100} />
+        <NesProgress value={50} max={100} />
       </div>
     </div>
   );
