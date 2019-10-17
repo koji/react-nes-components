@@ -6,6 +6,8 @@ import { NesText } from './Text';
 import { NesSNSIcon } from './SNSIcons';
 import { NesButton } from './Button';
 import { NesProgress } from './Progress';
+import { NesArt } from './PixelArts';
+
 
 const contents = ["hell", "nes", "components", "test"];
 const App: React.FC = () => {
@@ -66,6 +68,10 @@ const App: React.FC = () => {
       <div style={{ margin: "30px" }}>
         <NesProgress barType={"primary"} value={50} max={100} />
         <NesProgress value={50} max={100} />
+      </div>
+      <div style={{ margin: "30px" }}>
+        <NesArt iconType={"nes-octocat"} animate={true} />
+        <NesArt iconType={"nes-smartphone"} />
       </div>
     </div>
   );
