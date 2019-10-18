@@ -17,7 +17,7 @@ export class NesInput extends React.Component<Props> {
     return(
       <div className={outterClass}>
         <label htmlFor={`${fieldType}_field`}>{label}</label>
-        <input type="text" id={`${fieldType}_field`} className={inputClass} placeholder={placeHolder}>
+        <input type="text" id={`${fieldType}_field`} className={inputClass} placeholder={placeHolder} />
       </div>
     );
   }
