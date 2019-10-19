@@ -4,7 +4,7 @@ import "../../node_modules/nes.css/css/nes.css";
 type Props = {
   // avatarType: string;
   iconSize: "large" | "medium" | "small";
-  isRounded: boolean;
+  isRounded?: boolean;
   imgSrc: string;
 };
 
