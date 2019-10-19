@@ -3,7 +3,7 @@ import "../../node_modules/nes.css/css/nes.css";
 
 // buttonType undefined --> normal
 type Props = {
-  darkMode: boolean;
+  darkMode?: boolean;
   labels: string[];
 };
 

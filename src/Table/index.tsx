@@ -2,7 +2,7 @@ import * as React from "react";
 import "../../node_modules/nes.css/css/nes.css";
 
 type Props = {
-  darkMode: boolean;
+  darkMode?: boolean;
   isCentered: boolean;
   isBordered: boolean;
   headers: string[];

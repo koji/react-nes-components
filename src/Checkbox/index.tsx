@@ -2,7 +2,7 @@ import * as React from "react";
 import "../../node_modules/nes.css/css/nes.css";
 
 type Props = {
-  darkMode: boolean;
+  darkMode?: boolean;
   items: string[];
   checkedPos?: number; // add checked if undefined => first
 };
