@@ -3,8 +3,8 @@ import "../../node_modules/nes.css/css/nes.css";
 
 type Props = {
   darkMode?: boolean;
-  isCentered: boolean;
-  isBordered: boolean;
+  isCentered?: boolean;
+  isBordered?: boolean;
   headers: string[];
   items: Array<string|number>;
 };

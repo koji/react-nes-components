@@ -3,7 +3,7 @@ import "../../node_modules/nes.css/css/nes.css";
 
 type Props = {
   badgeType: "dark" | "primary" | "success" | "warning" | "error" ;
-  isSplited: boolean;
+  isSplited?: boolean;
   splits?: Array<"dark" | "primary" | "success" | "warning" | "error">;
   // badgeSize: "large" | "medium" | "small";
   contents: string[];
