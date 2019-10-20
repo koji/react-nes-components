@@ -9,8 +9,22 @@ type Props = {
   darkMode?: boolean
 };
 
+type State = {
+  value: string | number;
+};
+
 // NES.css select
-export class NesDropdown extends React.Component<Props> {
+export class NesDropdown extends React.Component<Props, State> {
+
+  constructor(props: Props) {
+    super(props);
+    this.state = { value: 0 };
+  }
+
+  handleChange(e: React.FormEvent<HTMLSelectElement>) {
+    this.setState({ value: e.currentTarget.value });
+  }
+
   render() {
     const {label, options, value, selectType, darkMode } = this.props;
     const optionElms = options.map((option, i) =>
@@ -28,7 +42,7 @@ export class NesDropdown extends React.Component<Props> {
         )
       }
       <div className={selectClass}>
-        <select required id={selectId}>
+        <select required id={selectId} onChange={e => this.handleChange}>
           {optionElms}
         </select>
       </div>
