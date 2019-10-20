@@ -2,8 +2,6 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { NesArt } from "../PixelArts";
 
-"nes-logo" | "nes-jp-logo" | "snes-logo" | "snes-jp-logo" | "nes-octocat" | "nes-smartphone" | "nes-phone";
-
 storiesOf("nes-components/NesArt", module)
   .addDecorator(story => (
     <div
