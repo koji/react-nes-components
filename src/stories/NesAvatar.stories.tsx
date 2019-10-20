@@ -26,5 +26,4 @@ storiesOf("nes-components/NesAvatar", module)
       isRounded={true}
       imgSrc={"https://avatars1.githubusercontent.com/u/474225?s=460&v=4"}
     />
-
   ));

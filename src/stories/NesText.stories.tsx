@@ -30,21 +30,21 @@ storiesOf("nes-components/NesText", module)
   .add("primary", () => (
     <NesText
       textType={"primary"}
-      content={"Hello NES.css primary"}
+      content={"Hello nes-components primary"}
       fontSize={30}
     />
   ))
   .add("success", () => (
     <NesText
       textType={"success"}
-      content={"Hello NES.css success"}
+      content={"Hello nes-components success"}
       fontSize={30}
     />
   ))
   .add("warning", () => (
     <NesText
       textType={"warning"}
-      content={"Hello NES.css warning"}
+      content={"Hello nes-components warning"}
       fontSize={30}
     />
   ))
@@ -54,7 +54,7 @@ storiesOf("nes-components/NesText", module)
   .add("disabled", () => (
     <NesText
       textType={"disabled"}
-      content={"Hello NES.css disabled"}
+      content={"Hello nes-components disabled"}
       fontSize={30}
     />
   ));
