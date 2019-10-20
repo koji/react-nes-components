@@ -3,7 +3,7 @@ import React from 'react';
 // import './App.css';
 import { NesList } from './List';
 import { NesText } from './Text';
-import { NesSNSIcon } from './SNSIcons';
+import { NesSNSIcon } from './SNSIcon';
 import { NesButton } from './Button';
 import { NesProgress } from './Progress';
 import { NesArt } from './PixelArts';

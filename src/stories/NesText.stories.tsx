@@ -1,6 +1,13 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
+import WebFont from 'webfontloader';
 import { NesText } from "../Text";
+
+WebFont.load({
+  google: {
+    families: ['Press+Start+2P']
+  }
+});
 
 storiesOf("nes-components/NesText", module)
   .addDecorator(story => (
@@ -24,21 +31,21 @@ storiesOf("nes-components/NesText", module)
     <NesText
       textType={"primary"}
       content={"Hello NES.css primary"}
-      fontSize={50}
+      fontSize={30}
     />
   ))
   .add("success", () => (
     <NesText
       textType={"success"}
       content={"Hello NES.css success"}
-      fontSize={50}
+      fontSize={30}
     />
   ))
   .add("warning", () => (
     <NesText
       textType={"warning"}
       content={"Hello NES.css warning"}
-      fontSize={50}
+      fontSize={30}
     />
   ))
   .add("error", () => (
@@ -48,6 +55,6 @@ storiesOf("nes-components/NesText", module)
     <NesText
       textType={"disabled"}
       content={"Hello NES.css disabled"}
-      fontSize={50}
+      fontSize={30}
     />
   ));
