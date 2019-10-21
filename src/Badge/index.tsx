@@ -3,33 +3,23 @@ import "../../node_modules/nes.css/css/nes.css";
 
 type Props = {
   link?: string;
-  badgeType?: "dark" | "primary" | "success" | "warning" | "error" ; // splited case don't need this
-  isSplited?: boolean;
-  splits?: Array<"dark" | "primary" | "success" | "warning" | "error">;
+  badgeType: Array<"dark" | "primary" | "success" | "warning" | "error">;
   // badgeSize: "large" | "medium" | "small";
   contents: string[];
 };
 
 export class NesBadge extends React.Component<Props> {
   render() {
-    const { link, badgeType, isSplited, splits, /* badgeSize, */ contents } = this.props;
-    const badgeClass = `is-${badgeType}`;
-    console.log(badgeClass);
+    const { link, badgeType, /* badgeSize, */ contents } = this.props;
+    const isSplited = (badgeType.length===2) ? true : false;
+    // if badgeType's length is more than 2, the badge will be a splited badge
+    const badgeClass = isSplited ? `nes-badge is-splited` : `nes-badge`;
+    const linkTo = link ? link : "#";
     return (
-      <React.Fragment>
-      {isSplited ? (
-        splits && (
-          <a href={link ? link : "#"} className="nes-badge is-splited">
-            <span className={`is-${splits[0]}`}>{contents[0]}</span>
-            <span className={`is-${splits[1]}`}>{contents[1]}</span>
-          </a>
-        )
-        ):(
-        <a href={link ? link : "#"} className="nes-badge">
-          <span className={badgeClass}>{contents[0]}</span>
-        </a>
-      )}
-      </React.Fragment>
+      <a href={linkTo} className={badgeClass}>
+        <span className={`is-${badgeType[0]}`}>{contents[0]}</span>
+      {isSplited && (<span className={`is-${badgeType[1]}`}>{contents[1]}</span>)}
+      </a>
     );
   }
 }
