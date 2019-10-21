@@ -2,14 +2,14 @@ import * as React from 'react';
 import '../../node_modules/nes.css/css/nes.css';
 
 type Props = {
-  id?: string;
+  content?: string;
 };
 
 export class NesTextarea extends React.Component<Props> {
   render() {
-    const { id } = this.props;
+    const { content } = this.props;
     return (
-      <textarea id={id} className={"nes-textarea"}></textarea>
+      <textarea id="textarea_field" className="nes-textarea">{content}</textarea>
     )
   }
 }
