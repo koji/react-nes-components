@@ -26,7 +26,7 @@ storiesOf("nes-components/NesBadge", module)
       contents={["nes-components"]}
     />
   ))
-  .add("dark_splited", () => (
+  .add("dark_success_splited", () => (
     <NesBadge
       badgeType={["dark", "success"]}
       contents={["nes-components", "0.0.1"]}
@@ -38,7 +38,7 @@ storiesOf("nes-components/NesBadge", module)
       contents={["nes-components"]}
     />
   ))
-  .add("primary", () => (
+  .add("dark_primary_splited", () => (
     <NesBadge
       badgeType={["dark", "primary"]}
       contents={["npm", "1.1.1"]}
