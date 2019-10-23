@@ -22,39 +22,43 @@ storiesOf("nes-components/NesBadge", module)
   })
   .add("dark", () => (
     <NesBadge
-      badgeType={"dark"}
+      badgeType={["dark"]}
       contents={["nes-components"]}
     />
   ))
-  .add("dark_splited", () => (
+  .add("dark_success_splited", () => (
     <NesBadge
-      badgeType={"dark"}
-      isSplited={true}
-      splits={["dark", "success"]}
+      badgeType={["dark", "success"]}
       contents={["nes-components", "0.0.1"]}
     />
   ))
   .add("primary", () => (
     <NesBadge
-      badgeType={"primary"}
+      badgeType={["primary"]}
       contents={["nes-components"]}
+    />
+  ))
+  .add("dark_primary_splited", () => (
+    <NesBadge
+      badgeType={["dark", "primary"]}
+      contents={["npm", "1.1.1"]}
     />
   ))
   .add("success", () => (
     <NesBadge
-      badgeType={"success"}
+      badgeType={["success"]}
       contents={["nes-components"]}
     />
   ))
   .add("warning", () => (
     <NesBadge
-      badgeType={"warning"}
+      badgeType={["warning"]}
       contents={["nes-components"]}
     />
   ))
   .add("error", () => (
     <NesBadge
-      badgeType={"error"}
+      badgeType={["error"]}
       contents={["nes-components"]}
     />
   ))

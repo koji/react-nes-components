@@ -29,24 +29,21 @@ export class NesTable extends React.Component<Props> {
     const colNum = headers.length;
     const rowNum = Math.ceil(items.length / colNum);
     const tableBody = [];
-    for(let i=0; i=rowNum; i++) {
-      const tmpItems = items.splice(i*colNum, colNum);
-      const body = tmpItems.map(item => <td>{item}</td>)
+    for(let i=0; i<rowNum; i++) {
+      const tmpItems = items.slice(i*colNum, i*colNum+(colNum));
+      const body = tmpItems.map(item => <td key={`table-${item}`}>{item}</td>)
       tableBody.push(body);
     }
-
     return (
       <div className="nes-table-responsive">
         <table className={tableClass}>
           <thead>
             <tr>
-              {/* table header */}
-              {headers.map(header => <th>{header}</th>)}
+              {headers.map(header => <th key={`table-${header}`}>{header}</th>)}
             </tr>
           </thead>
           <tbody>
-            {/* table body */}
-            {tableBody.map(row => <tr>{row}</tr>)}
+            {tableBody.map((row,i) => <tr key={`table-row-${i}`}>{row}</tr>)}
           </tbody>
         </table>
       </div>

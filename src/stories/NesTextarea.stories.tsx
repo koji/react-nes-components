@@ -9,7 +9,7 @@ storiesOf("nes-components/NesTextarea", module)
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        height: "100vh",
+        height: "100vh"
       }}
     >
       {story()}
@@ -22,6 +22,6 @@ storiesOf("nes-components/NesTextarea", module)
   })
   .add("textarea", () => (
     <NesTextarea
-     content={"This is textarea's sample!!!"}
+      content={"This is textarea's sample!!!"}
     />
   ));
