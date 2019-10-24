@@ -1,6 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { NesArt } from "../PixelArts";
+import { NesArt } from "../Icon";
 
 storiesOf("nes-components/NesArt", module)
   .addDecorator(story => (
