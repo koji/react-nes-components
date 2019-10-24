@@ -1,8 +1,15 @@
-import * as React from 'react';
+import * as React from "react";
 import "../../node_modules/nes.css/css/nes.css";
 
 type Props = {
-  iconType: "nes-logo" | "nes-jp-logo" | "snes-logo" | "snes-jp-logo" | "nes-octocat" | "nes-smartphone" | "nes-phone";
+  iconType:
+    | "nes-logo"
+    | "nes-jp-logo"
+    | "snes-logo"
+    | "snes-jp-logo"
+    | "nes-octocat"
+    | "nes-smartphone"
+    | "nes-phone";
   animate?: boolean; // this is only for nes-octocat
 };
 
