@@ -1,6 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { NesSNSIcon } from "../SNSIcon";
+import { NesSNSIcon } from "../Icon";
 
 storiesOf("nes-components/NesSNSIcon", module)
   .addDecorator(story => (

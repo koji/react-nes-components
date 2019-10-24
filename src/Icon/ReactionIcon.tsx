@@ -11,8 +11,6 @@ export class NesReactionIcon extends React.Component<Props> {
   render() {
     const { iconType, iconSize, iconReaction } = this.props;
     const iconClass = `nes-icon is-${iconSize} ${iconType} is-${iconReaction}`;
-    return(
-      <i className={iconClass}></i>
-    );
+    return <i className={iconClass}></i>;
   }
 }
