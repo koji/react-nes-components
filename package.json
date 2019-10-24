@@ -58,6 +58,7 @@
     "storybook-addon-jsx": "^7.1.6",
     "storybook-addon-react-docgen": "^1.2.28",
     "ts-lint": "^4.5.1",
+    "tslint": "^5.20.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-eslint-rules": "^5.4.0",
     "typescript": "3.6.4",

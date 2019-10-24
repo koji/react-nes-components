@@ -1,30 +1,20 @@
 import React from 'react';
-import { NesTable } from "./Table";
-
-
-const contents = ["hell", "nes", "components", "test"];
+import { NesInput } from "./Input";
 const App: React.FC = () => {
+
+  const handleChange = (e: any, value: any) => {
+    console.log('onChange', value);
+  }
+
   return (
     <div className="App">
-      <NesTable
+      <NesInput
         darkMode={true}
-        isCentered={true}
-        isBordered={true}
-        headers={contents}
-        items={[
-          "aaa",
-          "bbb",
-          "ccc",
-          "ddd",
-          "eee",
-          "fff",
-          "ggg",
-          "hhh",
-          "aaa",
-          "bbb",
-          "ccc",
-          "ddd"
-        ]}
+        isInline={true}
+        fieldType={"success"}
+        label={"NesInput Test"}
+        placeHolder={"put something here"}
+        onChange={() => handleChange}
       />
     </div>
   );

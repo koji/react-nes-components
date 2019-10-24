@@ -22,10 +22,16 @@ storiesOf("nes-components/NesTable", module)
   })
   .add("table", () => (
     <NesTable
-      darkMode={true}
-      isCentered={true}
       isBordered={true}
       headers={["item1", "item2", "item3", "item4"]}
+      items={["aaa", "bbb", "ccc", "ddd", "eee", "fff", "ggg", "hhh"]}
+    />
+  ))
+  .add("table_dark", () => (
+    <NesTable
+      darkMode={true}
+      isCentered={true}
+      headers={["itemA", "itemB", "itemC", "itemD"]}
       items={["aaa", "bbb", "ccc", "ddd", "eee", "fff", "ggg", "hhh"]}
     />
   ));
