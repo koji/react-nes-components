@@ -1,4 +1,4 @@
 import NesButton from "./Button";
-// import NesLinkButton from './LinkButton';
+import NesLinkButton from './LinkButton';
 
-export { NesButton };
+export { NesButton, NesLinkButton };
