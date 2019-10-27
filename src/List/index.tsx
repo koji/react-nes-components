@@ -9,7 +9,7 @@ type Props = {
 export class NesList extends React.Component<Props> {
   render() {
     const { items, isDisc } = this.props;
-    const itemType: string = "nes-list";
+    const itemType = "nes-list";
     const classType = isDisc ? `${itemType} is-disc` : `${itemType} is-circle`;
     // create li items
     const listItems = items.map((item, i) =>
