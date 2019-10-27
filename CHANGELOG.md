@@ -1,4 +1,4 @@
-## 0.0.1 (Oct 31, 2019)
+## 0.1.0 (Oct 31, 2019)
 Initial release
 
 Updates:
