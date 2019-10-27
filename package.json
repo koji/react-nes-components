@@ -7,6 +7,7 @@
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0",
+    "styled-components": "^4.4.0",
     "webfontloader": "^1.6.28"
   },
   "scripts": {
@@ -52,6 +53,7 @@
     "@types/react-dom": "16.9.1",
     "@types/storybook__addon-info": "^4.1.2",
     "@types/storybook__react": "^4.0.2",
+    "@types/styled-components": "^4.1.19",
     "@types/webfontloader": "^1.6.29",
     "add": "^2.0.6",
     "react-docgen-typescript-loader": "^3.3.0",
