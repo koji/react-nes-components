@@ -4,6 +4,7 @@ import "../../node_modules/nes.css/css/nes.css";
 
 interface IProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   buttonType?: "primary" | "success" | "warning" | "error" | "disabled";
+  onClick: () => void;
 }
 
 const NesButton: React.FunctionComponent<IProps> = (
