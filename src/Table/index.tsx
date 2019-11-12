@@ -1,12 +1,12 @@
-import * as React from "react";
-import "../../node_modules/nes.css/css/nes.css";
+import * as React from 'react';
+import '../../node_modules/nes.css/css/nes.css';
 
 type Props = {
   darkMode?: boolean;
   isCentered?: boolean;
   isBordered?: boolean;
   headers: string[];
-  items: Array<string|number>;
+  items: Array<string | number>;
 };
 
 // 1. check headers.length => the number of header
@@ -14,14 +14,8 @@ type Props = {
 
 export class NesTable extends React.Component<Props> {
   render() {
-    const {
-      darkMode,
-      isCentered,
-      isBordered,
-      headers,
-      items,
-    } = this.props;
-    let tableClass = "nes-table";
+    const { darkMode, isCentered, isBordered, headers, items } = this.props;
+    let tableClass = 'nes-table';
     tableClass = isCentered ? `${tableClass} is-bordered` : tableClass;
     tableClass = isBordered ? `${tableClass} is-centered` : tableClass;
     tableClass = darkMode ? `${tableClass} is-dark` : tableClass;
@@ -29,9 +23,9 @@ export class NesTable extends React.Component<Props> {
     const colNum = headers.length;
     const rowNum = Math.ceil(items.length / colNum);
     const tableBody = [];
-    for(let i=0; i<rowNum; i++) {
-      const tmpItems = items.slice(i*colNum, i*colNum+(colNum));
-      const body = tmpItems.map(item => <td key={`table-${item}`}>{item}</td>)
+    for (let i = 0; i < rowNum; i++) {
+      const tmpItems = items.slice(i * colNum, i * colNum + colNum);
+      const body = tmpItems.map(item => <td key={`table-${item}`}>{item}</td>);
       tableBody.push(body);
     }
     return (
@@ -39,11 +33,15 @@ export class NesTable extends React.Component<Props> {
         <table className={tableClass}>
           <thead>
             <tr>
-              {headers.map(header => <th key={`table-${header}`}>{header}</th>)}
+              {headers.map(header => (
+                <th key={`table-${header}`}>{header}</th>
+              ))}
             </tr>
           </thead>
           <tbody>
-            {tableBody.map((row,i) => <tr key={`table-row-${i}`}>{row}</tr>)}
+            {tableBody.map((row, i) => (
+              <tr key={`table-row-${i}`}>{row}</tr>
+            ))}
           </tbody>
         </table>
       </div>

@@ -9,7 +9,11 @@ export class NesTextarea extends React.Component<Props> {
   render() {
     const { content } = this.props;
     return (
-      <textarea id="textarea_field" className="nes-textarea" placeholder={content}></textarea>
+      <textarea
+        id="textarea_field"
+        className="nes-textarea"
+        placeholder={content}
+      ></textarea>
     );
   }
 }

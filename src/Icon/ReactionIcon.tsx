@@ -1,10 +1,10 @@
-import * as React from "react";
-import "../../node_modules/nes.css/css/nes.css";
+import * as React from 'react';
+import '../../node_modules/nes.css/css/nes.css';
 
 type Props = {
-  iconType: "heart" | "star" | "like";
-  iconSize: "large" | "medium" | "small";
-  iconReaction?: "empty" | "half" | "transparent"; // undefined -> normal
+  iconType: 'heart' | 'star' | 'like';
+  iconSize: 'large' | 'medium' | 'small';
+  iconReaction?: 'empty' | 'half' | 'transparent'; // undefined -> normal
 };
 
 export class NesReactionIcon extends React.Component<Props> {

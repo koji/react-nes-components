@@ -1,25 +1,25 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 import WebFont from 'webfontloader';
-import { NesList } from "../List";
+import { NesList } from '../List';
 
 WebFont.load({
   google: {
-    families: ['Press+Start+2P']
-  }
+    families: ['Press+Start+2P'],
+  },
 });
 
-const contents = ["hell", "nes", "components", "storybook"];
+const contents = ['hell', 'nes', 'components', 'storybook'];
 
-storiesOf("nes-components/NesList", module)
+storiesOf('nes-components/NesList', module)
   .addDecorator(story => (
     <div
       style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh",
-        fontSize: "30px"
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh',
+        fontSize: '30px',
       }}
     >
       {story()}
@@ -27,12 +27,8 @@ storiesOf("nes-components/NesList", module)
   ))
   .addParameters({
     props: {
-      propTablesExclude: [{ NesList }]
-    }
+      propTablesExclude: [{ NesList }],
+    },
   })
-  .add("circle", () => (
-    <NesList items={contents} isDisc={false} />
-  ))
-  .add("disc", () => (
-    <NesList items={contents} isDisc={true} />
-  ));
+  .add('circle', () => <NesList items={contents} isDisc={false} />)
+  .add('disc', () => <NesList items={contents} isDisc={true} />);

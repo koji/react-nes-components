@@ -1,5 +1,5 @@
-import * as React from "react";
-import "../../node_modules/nes.css/css/nes.css";
+import * as React from 'react';
+import '../../node_modules/nes.css/css/nes.css';
 
 type Props = {
   containerTitle?: string;
@@ -16,9 +16,9 @@ export class NesContainer extends React.Component<Props> {
       isCentered,
       isRounded,
       darkMode,
-      content
+      content,
     } = this.props;
-    let containerClass = "nes-container";
+    let containerClass = 'nes-container';
     containerClass = containerTitle
       ? `${containerClass} with-title`
       : `${containerClass}`;
@@ -31,14 +31,12 @@ export class NesContainer extends React.Component<Props> {
       ? `${containerClass} is-rounded`
       : `${containerClass}`;
 
-      containerClass = darkMode
-        ? `${containerClass} is-dark`
-        : `${containerClass}`;
+    containerClass = darkMode
+      ? `${containerClass} is-dark`
+      : `${containerClass}`;
     return (
       <div className={containerClass}>
-        {containerTitle && (
-          <p className="title">{containerTitle}</p>
-        )}
+        {containerTitle && <p className="title">{containerTitle}</p>}
         <p>{content}</p>
       </div>
     );

@@ -1,9 +1,9 @@
-import * as React from "react";
-import "../../node_modules/nes.css/css/nes.css";
-import styled from "styled-components";
+import * as React from 'react';
+import '../../node_modules/nes.css/css/nes.css';
+import styled from 'styled-components';
 
 type Props = {
-  textType: "primary" | "success" | "warning" | "error";
+  textType: 'primary' | 'success' | 'warning' | 'error';
   item: string;
 };
 
@@ -23,7 +23,7 @@ const ToolTag = styled.span`
     background: #fff;
     border-radius: 10px;
     box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
-    content: "";
+    content: '';
     height: 6px;
     left: 10px;
     position: absolute;
@@ -35,7 +35,7 @@ const ToolTag = styled.span`
     border-bottom: 13px solid transparent;
     border-left: 10px solid #eee;
     border-top: 13px solid transparent;
-    content: "";
+    content: '';
     position: absolute;
     right: 0;
     top: 0;
@@ -51,10 +51,8 @@ const ToolTag = styled.span`
 
 export class NesTag extends React.Component<Props> {
   render() {
-    const { textType, item} = this.props;
+    const { textType, item } = this.props;
     const textClass = `nes-text is-${textType}`;
-    return <ToolTag className={textClass}>
-      {item}
-    </ToolTag>;
+    return <ToolTag className={textClass}>{item}</ToolTag>;
   }
 }

@@ -1,15 +1,15 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { NesTable } from "../Table";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+import { NesTable } from '../Table';
 
-storiesOf("nes-components/NesTable", module)
+storiesOf('nes-components/NesTable', module)
   .addDecorator(story => (
     <div
       style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh"
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh',
       }}
     >
       {story()}
@@ -17,21 +17,21 @@ storiesOf("nes-components/NesTable", module)
   ))
   .addParameters({
     props: {
-      propTablesExclude: [{ NesTable }]
-    }
+      propTablesExclude: [{ NesTable }],
+    },
   })
-  .add("table", () => (
+  .add('table', () => (
     <NesTable
       isBordered={true}
-      headers={["item1", "item2", "item3", "item4"]}
-      items={["aaa", "bbb", "ccc", "ddd", "eee", "fff", "ggg", "hhh"]}
+      headers={['item1', 'item2', 'item3', 'item4']}
+      items={['aaa', 'bbb', 'ccc', 'ddd', 'eee', 'fff', 'ggg', 'hhh']}
     />
   ))
-  .add("table_dark", () => (
+  .add('table_dark', () => (
     <NesTable
       darkMode={true}
       isCentered={true}
-      headers={["itemA", "itemB", "itemC", "itemD"]}
-      items={["aaa", "bbb", "ccc", "ddd", "eee", "fff", "ggg", "hhh"]}
+      headers={['itemA', 'itemB', 'itemC', 'itemD']}
+      items={['aaa', 'bbb', 'ccc', 'ddd', 'eee', 'fff', 'ggg', 'hhh']}
     />
   ));

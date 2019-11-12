@@ -1,5 +1,5 @@
-import * as React from "react";
-import "../../node_modules/nes.css/css/nes.css";
+import * as React from 'react';
+import '../../node_modules/nes.css/css/nes.css';
 
 // buttonType undefined --> normal
 type Props = {
@@ -10,18 +10,23 @@ type Props = {
 export class NesRadio extends React.Component<Props> {
   render() {
     const { darkMode, items } = this.props;
-    const classType = darkMode ? `nes-radio is-dark` : `nes-radio`;
+    const classType = darkMode ? 'nes-radio is-dark' : 'nes-radio';
     return items.map((item, index) => {
       return (
+        // eslint-disable-next-line react/jsx-key
         <label>
-          <input type="radio" className={classType} name="answer" />
+          <input
+            type="radio"
+            className={classType}
+            name="answer"
+            key={`${index}`}
+          />
           <span>{item}</span>
         </label>
       );
     });
   }
 }
-
 
 // ToDo
 // {index === 0 ? (

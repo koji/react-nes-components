@@ -1,15 +1,15 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { NesContainer } from "../Container";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+import { NesContainer } from '../Container';
 
-storiesOf("nes-components/NesContainer", module)
+storiesOf('nes-components/NesContainer', module)
   .addDecorator(story => (
     <div
       style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh"
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh',
       }}
     >
       {story()}
@@ -17,35 +17,33 @@ storiesOf("nes-components/NesContainer", module)
   ))
   .addParameters({
     props: {
-      propTablesExclude: [{ NesContainer }]
-    }
+      propTablesExclude: [{ NesContainer }],
+    },
   })
-  .add("Container", () => (
-    <NesContainer
-      content={"This is nes-components' container"}
-    />
+  .add('Container', () => (
+    <NesContainer content={'This is nes-components container'} />
   ))
-  .add("Container_centered", () => (
+  .add('Container_centered', () => (
     <NesContainer
-      containerTitle={"nes-components"}
+      containerTitle={'nes-components'}
       isCentered={true}
-      content={"This is nes-components' container"}
+      content={'This is nes-components container'}
     />
   ))
-  .add("Container_dark", () => (
+  .add('Container_dark', () => (
     <NesContainer
-      containerTitle={"nes-components"}
+      containerTitle={'nes-components'}
       isCentered={false}
       isRounded={true}
       darkMode={true}
-      content={"This is nes-components' container"}
+      content={'This is nes-components container'}
     />
   ))
-  .add("Container with title", () => (
+  .add('Container with title', () => (
     <NesContainer
-      containerTitle={"nes-components"}
+      containerTitle={'nes-components'}
       isCentered={true}
       isRounded={true}
-      content={"This is nes-components' container"}
+      content={'This is nes-components container'}
     />
   ));
