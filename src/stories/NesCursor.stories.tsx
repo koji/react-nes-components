@@ -1,15 +1,15 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { NesCursor } from "../Cursor";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+import { NesCursor } from '../Cursor';
 
-storiesOf("nes-components/NesCursor", module)
+storiesOf('nes-components/NesCursor', module)
   .addDecorator(story => (
     <div
       style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh"
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh',
       }}
     >
       {story()}
@@ -17,18 +17,18 @@ storiesOf("nes-components/NesCursor", module)
   ))
   .addParameters({
     props: {
-      propTablesExclude: [{ NesCursor }]
-    }
+      propTablesExclude: [{ NesCursor }],
+    },
   })
-  .add("Cursor left", () => (
+  .add('Cursor left', () => (
     <NesCursor
       isLeft={true}
-      content={"Hello! This is nes-components cursor!!"}
+      content={'Hello! This is nes-components cursor!!'}
     />
   ))
-  .add("Cursor right", () => (
+  .add('Cursor right', () => (
     <NesCursor
       isLeft={false}
-      content={"Hello! This is nes-components cursor!!"}
+      content={'Hello! This is nes-components cursor!!'}
     />
   ));

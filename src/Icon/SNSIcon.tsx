@@ -1,5 +1,5 @@
-import * as React from "react";
-import "../../node_modules/nes.css/css/nes.css";
+import * as React from 'react';
+import '../../node_modules/nes.css/css/nes.css';
 
 // snsType
 // twitter, facebook, instagram, github, google
@@ -10,19 +10,19 @@ import "../../node_modules/nes.css/css/nes.css";
 
 type Props = {
   snsType:
-    | "twitter"
-    | "facebook"
-    | "instagram"
-    | "github"
-    | "google"
-    | "gmail"
-    | "medium"
-    | "linkedin"
-    | "twitch"
-    | "youtube"
-    | "reddit"
-    | "whatsapp";
-  iconSize: "large" | "medium" | "small";
+    | 'twitter'
+    | 'facebook'
+    | 'instagram'
+    | 'github'
+    | 'google'
+    | 'gmail'
+    | 'medium'
+    | 'linkedin'
+    | 'twitch'
+    | 'youtube'
+    | 'reddit'
+    | 'whatsapp';
+  iconSize: 'large' | 'medium' | 'small';
 };
 
 export class NesSNSIcon extends React.Component<Props> {

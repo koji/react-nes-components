@@ -1,22 +1,22 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 import WebFont from 'webfontloader';
-import { NesText } from "../Text";
+import { NesText } from '../Text';
 
 WebFont.load({
   google: {
-    families: ['Press+Start+2P']
-  }
+    families: ['Press+Start+2P'],
+  },
 });
 
-storiesOf("nes-components/NesText", module)
+storiesOf('nes-components/NesText', module)
   .addDecorator(story => (
     <div
       style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh"
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh',
       }}
     >
       {story()}
@@ -24,37 +24,37 @@ storiesOf("nes-components/NesText", module)
   ))
   .addParameters({
     props: {
-      propTablesExclude: [{ NesText }]
-    }
+      propTablesExclude: [{ NesText }],
+    },
   })
-  .add("primary", () => (
+  .add('primary', () => (
     <NesText
-      textType={"primary"}
-      content={"Hello nes-components primary"}
+      textType={'primary'}
+      content={'Hello nes-components primary'}
       fontSize={30}
     />
   ))
-  .add("success", () => (
+  .add('success', () => (
     <NesText
-      textType={"success"}
-      content={"Hello nes-components success"}
+      textType={'success'}
+      content={'Hello nes-components success'}
       fontSize={30}
     />
   ))
-  .add("warning", () => (
+  .add('warning', () => (
     <NesText
-      textType={"warning"}
-      content={"Hello nes-components warning"}
+      textType={'warning'}
+      content={'Hello nes-components warning'}
       fontSize={30}
     />
   ))
-  .add("error", () => (
-    <NesText textType={"error"} content={"Hello NES.css error"} fontSize={50} />
+  .add('error', () => (
+    <NesText textType={'error'} content={'Hello NES.css error'} fontSize={50} />
   ))
-  .add("disabled", () => (
+  .add('disabled', () => (
     <NesText
-      textType={"disabled"}
-      content={"Hello nes-components disabled"}
+      textType={'disabled'}
+      content={'Hello nes-components disabled'}
       fontSize={30}
     />
   ));

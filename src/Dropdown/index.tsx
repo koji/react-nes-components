@@ -5,8 +5,6 @@ type Props = {};
 
 export class NesDropdown extends React.Component<Props> {
   render() {
-    return (
-      <div></div>
-    )
+    return <div></div>;
   }
 }

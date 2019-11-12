@@ -1,15 +1,15 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { NesRadio } from "../Radio";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+import { NesRadio } from '../Radio';
 
-storiesOf("nes-components/NesRadio", module)
+storiesOf('nes-components/NesRadio', module)
   .addDecorator(story => (
     <div
       style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh"
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh',
       }}
     >
       {story()}
@@ -17,14 +17,14 @@ storiesOf("nes-components/NesRadio", module)
   ))
   .addParameters({
     props: {
-      propTablesExclude: [{ NesRadio }]
-    }
+      propTablesExclude: [{ NesRadio }],
+    },
   })
-  .add("normal", () => (
-    <NesRadio items={["developer", "designer", "manager"]} />
+  .add('normal', () => (
+    <NesRadio items={['developer', 'designer', 'manager']} />
   ))
-  .add("darkMode", () => (
-    <div style={{ backgroundColor: "#212529" }}>
-      <NesRadio darkMode={true} items={["developer", "designer", "manager"]} />
+  .add('darkMode', () => (
+    <div style={{ backgroundColor: '#212529' }}>
+      <NesRadio darkMode={true} items={['developer', 'designer', 'manager']} />
     </div>
   ));

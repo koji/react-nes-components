@@ -1,15 +1,15 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { NesAvatar } from "../Avatar";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+import { NesAvatar } from '../Avatar';
 
-storiesOf("nes-components/NesAvatar", module)
+storiesOf('nes-components/NesAvatar', module)
   .addDecorator(story => (
     <div
       style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh"
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh',
       }}
     >
       {story()}
@@ -17,13 +17,13 @@ storiesOf("nes-components/NesAvatar", module)
   ))
   .addParameters({
     props: {
-      propTablesExclude: [{ NesAvatar }]
-    }
+      propTablesExclude: [{ NesAvatar }],
+    },
   })
-  .add("Avatar", () => (
+  .add('Avatar', () => (
     <NesAvatar
-      iconSize={"large"}
+      iconSize={'large'}
       isRounded={true}
-      imgSrc={"https://avatars1.githubusercontent.com/u/474225?s=460&v=4"}
+      imgSrc={'https://avatars1.githubusercontent.com/u/474225?s=460&v=4'}
     />
   ));

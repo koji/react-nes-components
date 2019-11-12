@@ -1,15 +1,15 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { NesReactionIcon } from "../Icon";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+import { NesReactionIcon } from '../Icon';
 
-storiesOf("nes-components/NesReactionIcon", module)
+storiesOf('nes-components/NesReactionIcon', module)
   .addDecorator(story => (
     <div
       style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh"
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh',
       }}
     >
       {story()}
@@ -17,59 +17,44 @@ storiesOf("nes-components/NesReactionIcon", module)
   ))
   .addParameters({
     props: {
-      propTablesExclude: [{ NesReactionIcon }]
-    }
+      propTablesExclude: [{ NesReactionIcon }],
+    },
   })
-  .add("heart", () => (
+  .add('heart', () => <NesReactionIcon iconType={'heart'} iconSize={'large'} />)
+  .add('heart_empty', () => (
     <NesReactionIcon
-      iconType={"heart"}
-      iconSize={"large"}
+      iconType={'heart'}
+      iconSize={'large'}
+      iconReaction={'empty'}
     />
   ))
-  .add("heart_empty", () => (
+  .add('star', () => <NesReactionIcon iconType={'star'} iconSize={'large'} />)
+  .add('star_empty', () => (
     <NesReactionIcon
-      iconType={"heart"}
-      iconSize={"large"}
-      iconReaction={"empty"}
+      iconType={'star'}
+      iconSize={'large'}
+      iconReaction={'empty'}
     />
   ))
-  .add("star", () => (
+  .add('star_half', () => (
     <NesReactionIcon
-      iconType={"star"}
-      iconSize={"large"}
+      iconType={'star'}
+      iconSize={'large'}
+      iconReaction={'half'}
     />
   ))
-  .add("star_empty", () => (
+  .add('star_transparent', () => (
     <NesReactionIcon
-      iconType={"star"}
-      iconSize={"large"}
-      iconReaction={"empty"}
+      iconType={'star'}
+      iconSize={'large'}
+      iconReaction={'transparent'}
     />
   ))
-  .add("star_half", () => (
+  .add('like', () => <NesReactionIcon iconType={'like'} iconSize={'large'} />)
+  .add('like_empty', () => (
     <NesReactionIcon
-      iconType={"star"}
-      iconSize={"large"}
-      iconReaction={"half"}
-    />
-  ))
-  .add("star_transparent", () => (
-    <NesReactionIcon
-      iconType={"star"}
-      iconSize={"large"}
-      iconReaction={"transparent"}
-    />
-  ))
-  .add("like", () => (
-    <NesReactionIcon
-      iconType={"like"}
-      iconSize={"large"}
-    />
-  ))
-  .add("like_empty", () => (
-    <NesReactionIcon
-      iconType={"like"}
-      iconSize={"large"}
-      iconReaction={"empty"}
+      iconType={'like'}
+      iconSize={'large'}
+      iconReaction={'empty'}
     />
   ));
