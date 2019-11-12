@@ -49,5 +49,10 @@ storiesOf('nes-components/NesButton', module)
     </NesButton>
   ))
   .add('disabled', () => (
-    <NesButton buttonType={'disabled'}>disabled</NesButton>
+    <NesButton
+      buttonType={'disabled'}
+      onClick={() => handleClick('will not be clickable')}
+    >
+      disabled
+    </NesButton>
   ));
