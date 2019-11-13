@@ -13,14 +13,14 @@ export class NesCheckbox extends React.Component<Props> {
     // const checkedNum = checkedPos ? checkedPos : 0;
     const checkboxClass = darkMode ? 'nes-checkbox is-dark' : 'nes-checkbox';
     return (
-      <React.Fragment>
+      <>
         {items.map(item => (
           <label key={`${item}`}>
             <input type="checkbox" className={checkboxClass} />
             <span>{item}</span>
           </label>
         ))}
-      </React.Fragment>
+      </>
     );
   }
 }
