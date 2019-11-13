@@ -16,15 +16,21 @@ $ npm i nes-components
 ```
 
 #### samples
-Sample codes are in Storybook.
+Sample codes are in Storybook(`Typescript`).
 Please check it out.
+`js` samples will be added soon.
 
 
 ### Use Storybook
 ```
 $ cd nes-components
 $ yarn & yarn storybook
+or
+$ npm i & npm run storybook
 ```
-The terminal will open localhost:9009.   
+The terminal will open [localhost:9009](localhost:9009).
 
+You will see like below.
+
+![storrybook](./assets/storybook.png)
 
