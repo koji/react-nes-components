@@ -65,4 +65,4 @@ typings/
 src/stories/.DS_Store
 
 # storybook
-/storybook-static
+storybook-static/
