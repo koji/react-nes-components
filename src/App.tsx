@@ -1,10 +1,10 @@
 import React from 'react';
 // import { NesInput } from './Input';
-import { NesBadge } from './Badge';
+// import { NesBadge } from './Badge';
 const App: React.FC = () => {
-  const handleChange = (e: any, value: string) => {
-    console.log('onChange', value);
-  };
+  // const handleChange = (e: any, value: string) => {
+  //   console.log('onChange', value);
+  // };
 
   return (
     <div className="App">
@@ -16,7 +16,7 @@ const App: React.FC = () => {
         placeHolder={'put something here'}
         onChange={() => handleChange}
       /> */}
-      <NesBadge badgeType={['primary']} contents={['nes-components']} />
+      {/* <NesBadge badgeType={['primary']} contents={['nes-components']} /> */}
     </div>
   );
 };
