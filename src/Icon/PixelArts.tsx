@@ -10,12 +10,14 @@ type Props = {
     | 'nes-octocat'
     | 'nes-smartphone'
     | 'nes-phone';
-  animate?: boolean; // this is only for nes-octocat
+  isAnimated?: boolean; // this is only for nes-octocat
 };
 
 export class NesArt extends React.Component<Props> {
   render() {
-    const { iconType, animate } = this.props;
-    return <i className={animate ? `${iconType} animate` : `${iconType}`}></i>;
+    const { iconType, isAnimated } = this.props;
+    return (
+      <i className={isAnimated ? `${iconType} animate` : `${iconType}`}></i>
+    );
   }
 }
