@@ -24,6 +24,8 @@ storiesOf('nes-components/NesArt', module)
   .add('nes-jp-logo', () => <NesArt iconType={'nes-jp-logo'} />)
   .add('snes-logo', () => <NesArt iconType={'snes-logo'} />)
   .add('snes-jp-logo', () => <NesArt iconType={'snes-jp-logo'} />)
-  .add('nes-octocat', () => <NesArt iconType={'nes-octocat'} animate={true} />)
+  .add('nes-octocat', () => (
+    <NesArt iconType={'nes-octocat'} isAnimated={true} />
+  ))
   .add('nes-smartphone', () => <NesArt iconType={'nes-smartphone'} />)
   .add('nes-phone', () => <NesArt iconType={'nes-phone'} />);
