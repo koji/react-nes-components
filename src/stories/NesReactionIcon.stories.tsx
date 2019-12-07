@@ -25,7 +25,7 @@ storiesOf('nes-components/NesReactionIcon', module)
     <NesReactionIcon
       iconType={'heart'}
       iconSize={'large'}
-      iconReaction={'empty'}
+      iconReactionType={'empty'}
     />
   ))
   .add('star', () => <NesReactionIcon iconType={'star'} iconSize={'large'} />)
@@ -33,21 +33,21 @@ storiesOf('nes-components/NesReactionIcon', module)
     <NesReactionIcon
       iconType={'star'}
       iconSize={'large'}
-      iconReaction={'empty'}
+      iconReactionType={'empty'}
     />
   ))
   .add('star_half', () => (
     <NesReactionIcon
       iconType={'star'}
       iconSize={'large'}
-      iconReaction={'half'}
+      iconReactionType={'half'}
     />
   ))
   .add('star_transparent', () => (
     <NesReactionIcon
       iconType={'star'}
       iconSize={'large'}
-      iconReaction={'transparent'}
+      iconReactionType={'transparent'}
     />
   ))
   .add('like', () => <NesReactionIcon iconType={'like'} iconSize={'large'} />)
@@ -55,6 +55,6 @@ storiesOf('nes-components/NesReactionIcon', module)
     <NesReactionIcon
       iconType={'like'}
       iconSize={'large'}
-      iconReaction={'empty'}
+      iconReactionType={'empty'}
     />
   ));
