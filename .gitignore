@@ -70,3 +70,4 @@ storybook-static/
 
 # build
 build/
+.DS_Store
