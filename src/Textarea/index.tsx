@@ -13,28 +13,10 @@ type Props = {
   ) => void;
 };
 
-type State = {
-  value: string;
-};
-
-export class NesTextarea extends React.Component<Props, State> {
-  constructor(props: Props) {
-    super(props);
-    this.state = {
-      value: '',
-    };
-  }
-
-  // handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-  //   this.setState({
-  //     value: e.target.value,
-  //   });
-  // };
-
+export class NesTextarea extends React.Component<Props> {
   handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     const { onChange } = this.props;
     const value = e.target.value;
-    this.setState({ value: value });
     onChange && onChange(e, value);
   };
 
@@ -47,7 +29,6 @@ export class NesTextarea extends React.Component<Props, State> {
         cols={cols}
         className="nes-textarea"
         placeholder={placeholder}
-        value={this.state.value}
         onChange={e => this.handleChange(e)}
       />
     );
