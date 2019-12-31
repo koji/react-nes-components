@@ -1,9 +1,9 @@
 import * as React from 'react';
-import 'nes.css';
+import '../assets/nes.css';
 
 type Props = {};
 
-export class Dialog extends React.Component<Props> {
+export class NesDropdown extends React.Component<Props> {
   render() {
     return <div></div>;
   }

@@ -10,11 +10,10 @@
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
-    "outDir": "dist",
+    "outDir": "./lib",
     "baseUrl": ".",
     "lib": [
       "dom",
-      "dom.iterable",
       "esnext"
     ],
     "allowJs": true,
@@ -24,6 +23,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
+    // "declaration": true,
     "jsx": "react"
   },
   "include": [
@@ -31,6 +31,10 @@
   ],
   "exclude": [
     "node_modules",
-    "dist"
+    "lib",
+    "rollup.config.js",
+    "src/stories/*",
+    "src/__tests__/*",
+    "src/assets/*"
   ]
 }
