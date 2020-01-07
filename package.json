@@ -1,6 +1,6 @@
 {
   "name": "nes-components",
-  "version": "0.0.3",
+  "version": "0.0.8",
   "dependencies": {
     "nes.css": "^2.2.1",
     "react": "^16.10.2",
