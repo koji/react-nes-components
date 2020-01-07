@@ -1,5 +1,5 @@
 import * as React from 'react';
-import 'nes.css';
+import '../assets/nes.css';
 
 type Props = {};
 

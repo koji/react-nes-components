@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '../../node_modules/nes.css/css/nes.css';
+import '../assets/nes.css';
 import styled from 'styled-components';
 
 type Props = {

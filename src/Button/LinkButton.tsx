@@ -1,4 +1,5 @@
 import * as React from 'react';
+import '../assets/nes.css';
 
 type Props = {
   buttonType?: 'primary' | 'success' | 'warning' | 'error' | 'disabled';
