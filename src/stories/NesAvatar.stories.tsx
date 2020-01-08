@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { NesAvatar } from '../Avatar';
+import TestImage from './test.png'; // import image
 
 storiesOf('nes-components/NesAvatar', module)
   .addDecorator(story => (
@@ -21,9 +22,5 @@ storiesOf('nes-components/NesAvatar', module)
     },
   })
   .add('Avatar', () => (
-    <NesAvatar
-      iconSize={'large'}
-      isRounded={true}
-      imgSrc={'https://avatars1.githubusercontent.com/u/474225?s=460&v=4'}
-    />
+    <NesAvatar iconSize={'large'} isRounded={true} imgSrc={TestImage} />
   ));
