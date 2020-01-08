@@ -18,3 +18,5 @@ export * from './Tag';
 export * from './Text';
 export * from './Textarea';
 // export * from '.';
+
+// declare module '*.png';

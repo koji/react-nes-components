@@ -16,6 +16,8 @@ const avatarStyle: React.CSSProperties = {
 export class NesAvatar extends React.Component<Props> {
   render() {
     const { iconSize, isRounded, imgSrc } = this.props;
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    // const iSrc = require(imgSrc);
     const avatarClass = isRounded
       ? `nes-avatar is-rounded is-${iconSize}`
       : `nes-avatar is-${iconSize}`;
