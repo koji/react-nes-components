@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<i
+  className="nes-logo"
+/>
+`;
+
+exports[` 2`] = `
+<i
+  className="snes-logo"
+/>
+`;
+
+exports[` 3`] = `
+<i
+  className="nes-octocat animate"
+/>
+`;
+
+exports[` 4`] = `
+<i
+  className="nes-smartphone"
+/>
+`;
+
+exports[` 5`] = `
+<i
+  className="nes-icon is-medium heart is-undefined"
+/>
+`;
+
+exports[` 6`] = `
+<i
+  className="nes-icon is-large star is-half"
+/>
+`;
+
+exports[` 7`] = `
+<i
+  className="nes-icon is-small like is-transparent"
+/>
+`;
+
+exports[` 8`] = `
+<i
+  className="nes-icon undefined is-small"
+/>
+`;
+
+exports[` 9`] = `
+<i
+  className="nes-icon undefined is-large"
+/>
+`;
+
+exports[` 10`] = `
+<i
+  className="nes-icon undefined is-medium"
+/>
+`;
+
+exports[`<NesIcon> renders without crashing 1`] = `
+<i
+  className="nes-icon close is-medium"
+/>
+`;
+
+exports[`<NesIcon> renders without crashing 2`] = `
+<i
+  className="nes-icon close is-large"
+/>
+`;
+
+exports[`<NesIcon> renders without crashing 3`] = `
+<i
+  className="nes-icon close is-small"
+/>
+`;
+
+exports[`<NesIcon> renders without crashing closeIcon 1`] = `
+<i
+  className="nes-icon close is-medium"
+/>
+`;
+
+exports[`<NesIcon> renders without crashing closeIcon 2`] = `
+<i
+  className="nes-icon close is-large"
+/>
+`;
+
+exports[`<NesIcon> renders without crashing closeIcon 3`] = `
+<i
+  className="nes-icon close is-small"
+/>
+`;
+
+exports[`<NesIcon> renders without crashing coinIcon 1`] = `
+<i
+  className="nes-icon coin is-medium"
+/>
+`;
+
+exports[`<NesIcon> renders without crashing coinIcon 2`] = `
+<i
+  className="nes-icon coin is-large"
+/>
+`;
+
+exports[`<NesIcon> renders without crashing coinIcon 3`] = `
+<i
+  className="nes-icon coin is-small"
+/>
+`;
+
+exports[`<NesIcon> renders without crashing trophyIcon 1`] = `
+<i
+  className="nes-icon trophy is-medium"
+/>
+`;
+
+exports[`<NesIcon> renders without crashing trophyIcon 2`] = `
+<i
+  className="nes-icon trophy is-large"
+/>
+`;
+
+exports[`<NesIcon> renders without crashing trophyIcon 3`] = `
+<i
+  className="nes-icon trophy is-small"
+/>
+`;

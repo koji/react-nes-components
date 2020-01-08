@@ -9,7 +9,7 @@ import '../assets/nes.css';
 // large, medium, small
 
 type Props = {
-  snsType:
+  iconType:
     | 'twitter'
     | 'facebook'
     | 'instagram'
@@ -27,8 +27,8 @@ type Props = {
 
 export class NesSNSIcon extends React.Component<Props> {
   render() {
-    const { snsType, iconSize } = this.props;
-    const classType = `nes-icon ${snsType} is-${iconSize}`;
+    const { iconType, iconSize } = this.props;
+    const classType = `nes-icon ${iconType} is-${iconSize}`;
     return <i className={classType}></i>;
   }
 }
