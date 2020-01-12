@@ -15,7 +15,10 @@ $ yarn add nes-components
 $ npm i nes-components
 ```
 
-#### samples
+#### Doc
+Please see StoryBook https://nes-components.netlify.com/    
+
+#### samples ToDo
 Sample codes are in Storybook(`Typescript`).
 Please check it out.
 `js` samples will be added soon.
