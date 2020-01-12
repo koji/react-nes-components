@@ -65,9 +65,8 @@ typings/
 src/stories/.DS_Store
 src/.DS_Store
 
-# storybook
-storybook-static/
 
 # build
 build/
 .DS_Store
+lib/
