@@ -1,4 +1,7 @@
 # nes-components
+[![Generic badge](https://img.shields.io/badge/npm-v0.0.15-<COLOR>.svg)](https://shields.io/)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+
 
 ### What is `nes-components`?
 `nes-components` is a react component which is using NES.css.
