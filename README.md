@@ -15,7 +15,7 @@ $ yarn add nes-components
 $ npm i nes-components
 ```
 
-## caution
+## :warning:caution
 if nes-components doesn't show the right font, please add the following to your component.
 Currently, working on updating nes-components
 ```js
