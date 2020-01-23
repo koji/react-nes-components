@@ -15,6 +15,18 @@ $ yarn add nes-components
 $ npm i nes-components
 ```
 
+## caution
+if nes-components doesn't show the right font, please add the following to your component.
+Currently, working on updating nes-components
+```js
+import WebFont from 'webfontloader';
+WebFont.load({
+  google: {
+    families: ['Press+Start+2P'],
+  },
+});
+```
+
 #### Doc
 Please see StoryBook https://nes-components.netlify.com/    
 
