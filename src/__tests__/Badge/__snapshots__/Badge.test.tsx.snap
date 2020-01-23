@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NesBadge> renders without crashing 1`] = `
+<a
+  className="nes-badge"
+  href="#"
+>
+  <span
+    className="is-primary"
+  >
+    nes-components
+  </span>
+</a>
+`;

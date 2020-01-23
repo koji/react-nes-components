@@ -15,16 +15,37 @@ $ yarn add nes-components
 $ npm i nes-components
 ```
 
-#### samples
-Sample codes are in Storybook.
+## caution
+if nes-components doesn't show the right font, please add the following to your component.
+Currently, working on updating nes-components
+```js
+import WebFont from 'webfontloader';
+WebFont.load({
+  google: {
+    families: ['Press+Start+2P'],
+  },
+});
+```
+
+#### Doc
+Please see StoryBook https://nes-components.netlify.com/    
+
+#### samples ToDo
+Sample codes are in Storybook(`Typescript`).
 Please check it out.
+`js` samples will be added soon.
 
 
 ### Use Storybook
 ```
 $ cd nes-components
 $ yarn & yarn storybook
+or
+$ npm i & npm run storybook
 ```
-The terminal will open localhost:9009.   
+The terminal will open [localhost:9009](localhost:9009).
 
+You will see like below.
+
+![storrybook](./assets/storybook.png)
 

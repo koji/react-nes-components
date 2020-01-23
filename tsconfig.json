@@ -2,35 +2,42 @@
   "compilerOptions": {
     "module": "esnext",
     "esModuleInterop": true,
-    "target": "es2017",
-    "noImplicitAny": true,
+    "target": "es6",
     "moduleResolution": "node",
-    "sourceMap": true,
-    "strict": true,
+    "strict": false,
+    "alwaysStrict": true,
+    "removeComments": false,
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
-    "outDir": "dist",
+    "outDir": "./lib",
     "baseUrl": ".",
     "lib": [
       "dom",
-      "dom.iterable",
       "esnext"
     ],
-    "allowJs": true,
+    "allowJs": false,
     "skipLibCheck": true,
-    "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
+    "importHelpers": true,
+    "noEmitOnError": false,
+    "declaration": true,
+    "declarationDir": "lib",
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react"
+    "noEmit": true
   },
   "include": [
     "src/**/*"
   ],
   "exclude": [
     "node_modules",
-    "dist"
+    "lib",
+    "rollup.config.js",
+    "src/stories/*",
+    "src/__tests__/*",
+    "src/assets/*"
   ]
 }
