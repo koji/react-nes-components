@@ -63,7 +63,7 @@
     "@types/styled-components": "^5.1.0",
     "@types/webfontloader": "^1.6.29",
     "@typescript-eslint/eslint-plugin": "^3.0.0",
-    "@typescript-eslint/parser": "^2.5.0",
+    "@typescript-eslint/parser": "^3.0.0",
     "add": "^2.0.6",
     "eslint": "^6.6.0",
     "eslint-config-prettier": "^6.5.0",
