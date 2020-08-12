@@ -4,7 +4,7 @@
 
 
 ### What is `nes-components`?
-`nes-components` is a react component which is using NES.css.
+`nes-components` is a react component that is using NES.css.
 
 ### What is `NES.css`?
 NES.css is a NES-style(8bit-like) CSS Framework.
