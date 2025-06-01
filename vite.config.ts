@@ -10,7 +10,7 @@ import glob from 'glob';
 // Dynamically generate entry points
 // Excludes stories, tests, and main index.d.ts/react-app-env.d.ts
 const entryPoints = glob.sync('src/**/index.{ts,tsx}', {
-  ignore: ['src/__tests__/**', 'src/stories/**', 'src/index.d.ts', 'src/react-app-env.d.ts'],
+  ignore: ['src/__tests__/**', 'src/stories/**', 'src/index.d.ts', 'src/react-app-env.d.ts', 'src/index.ts', 'src/index.tsx'],
 });
 
 // Create an object for build.lib.entry
