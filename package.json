@@ -6,11 +6,10 @@
     "react-dom": "^16.10.2"
   },
   "scripts": {
-    "start": "storybook dev -p 9009 -c .storybook -s public",
+    "storybook": "storybook dev -p 9009 -c .storybook -s public",
     "dev:vite": "vite",
     "build": "vite build",
     "test": "jest",
-    "storybook": "storybook dev -p 9009 -c .storybook -s public",
     "build-storybook": "storybook build -c .storybook -s public",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
     "lint:prettier": "prettier --check './src/**/*.{js,ts,tsx}'",
