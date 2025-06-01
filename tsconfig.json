@@ -1,20 +1,20 @@
 {
   "compilerOptions": {
-    "module": "esnext",
+    "module": "ESNext",
     "esModuleInterop": true,
-    "target": "es6",
-    "moduleResolution": "node",
+    "target": "ES2020",
+    "moduleResolution": "bundler",
     "strict": false,
     "alwaysStrict": true,
     "removeComments": false,
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
-    "outDir": "./lib",
     "baseUrl": ".",
     "lib": [
-      "dom",
-      "esnext"
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
     ],
     "allowJs": false,
     "skipLibCheck": true,
@@ -22,20 +22,19 @@
     "resolveJsonModule": true,
     "importHelpers": true,
     "noEmitOnError": false,
-    "declaration": true,
-    "declarationDir": "lib",
-    "jsx": "react",
+    "jsx": "react-jsx",
     "allowSyntheticDefaultImports": true,
     "isolatedModules": true,
     "noEmit": true
   },
   "include": [
-    "src/**/*"
+    "src",
+    "vite.config.ts"
   ],
   "exclude": [
     "node_modules",
     "lib",
-    "rollup.config.js",
+    "storybook-static",
     "src/stories/*",
     "src/__tests__/*",
     "src/assets/*"
