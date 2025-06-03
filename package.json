@@ -35,13 +35,17 @@
     "init-msw": "msw init public/"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^1.9.0",
     "@eslint/js": "^9.9.0",
-    "@storybook/addon-essentials": "^8.5.6",
-    "@storybook/addon-interactions": "^8.5.6",
-    "@storybook/addon-links": "^8.5.6",
+    "@storybook/addon-essentials": "^8.6.14",
+    "@storybook/addon-interactions": "^8.6.14",
+    "@storybook/addon-links": "^8.6.14",
+    "@storybook/addon-onboarding": "^8.6.14",
+    "@storybook/addon-webpack5-compiler-babel": "^1.0.0",
     "@storybook/blocks": "^8.5.6",
     "@storybook/react": "^8.5.6",
     "@storybook/react-vite": "^8.5.6",
+    "@storybook/react-webpack5": "^8.6.14",
     "@storybook/test": "^8.5.6",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
@@ -54,6 +58,7 @@
     "globals": "^15.9.0",
     "msw": "^2.3.0",
     "msw-storybook-addon": "^2.0.3",
+    "react-docgen-typescript-loader": "^3.7.2",
     "storybook": "^8.5.6",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
@@ -67,5 +72,5 @@
       "plugin:storybook/recommended"
     ]
   },
-  "packageManager": "yarn@4.5.0"
+  "packageManager": "pnpm@10.11.1+sha512.e519b9f7639869dc8d5c3c5dfef73b3f091094b0a006d7317353c72b124e80e1afd429732e28705ad6bfa1ee879c1fce46c128ccebd3192101f43dd67c667912"
 }
