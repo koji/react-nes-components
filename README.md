@@ -1,7 +1,7 @@
 # nes-components
 [![Generic badge](https://img.shields.io/badge/npm-v0.0.15-<COLOR>.svg)](https://shields.io/)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/) [![Greenkeeper badge](https://badges.greenkeeper.io/koji/nes-components.svg)](https://greenkeeper.io/)
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/aee67ec9-b252-4d23-8135-8be69d5e51f4/deploy-status)](https://app.netlify.com/projects/nes-components/deploys)
 
 ### What is `nes-components`?
 `nes-components` is a react component that is using NES.css.
