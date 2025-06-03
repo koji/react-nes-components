@@ -26,6 +26,12 @@ yarn-error.log*
 
 build-storybook.log
 
+
+# build
+build/
+.DS_Store
+lib/
+dist/
 .pnp.*
 .yarn/*
 !.yarn/patches
@@ -33,3 +39,4 @@ build-storybook.log
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
