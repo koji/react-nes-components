@@ -1,112 +1,71 @@
 {
   "name": "nes-components",
-  "version": "0.0.9",
+  "version": "0.0.10",
+  "description": "react ui components that use nes-style css library and Storybook",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/koji/react-nes-components"
+  },
+  "bugs": {
+    "url": "https://github.com/koji/react-nes-components/issues"
+  },
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "storybook",
+    "nes",
+    "nes-css",
+    "components",
+    "NES-style"
+  ],
+  "author": "koji",
+  "private": true,
   "dependencies": {
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "react-scripts": "3.4.1",
-    "styled-components": "^5.1.0",
-    "webfontloader": "^1.6.28"
+    "nes.css": "^2.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "build:nes": "rm -rf ./lib && rollup -c && tsc",
-    "build:ts": "tsc",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public",
-    "lint": "eslint 'src/**/*.{ts,tsx}'",
-    "lint:prettier": "prettier --check './src/**/*.{js,ts,tsx}'",
-    "predeploy": "build-storybook",
-    "deploy": "gh-pages -d storybook-static"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "init-msw": "msw init public/"
   },
   "devDependencies": {
-    "@rollup/plugin-multi-entry": "^3.0.0",
-    "@storybook/addon-actions": "^5.2.4",
-    "@storybook/addon-console": "^1.2.1",
-    "@storybook/addon-docs": "^5.2.4",
-    "@storybook/addon-info": "^5.2.4",
-    "@storybook/addon-knobs": "^5.2.4",
-    "@storybook/addon-links": "^5.2.4",
-    "@storybook/addon-storysource": "^5.2.4",
-    "@storybook/addon-viewport": "^5.2.4",
-    "@storybook/addons": "^5.2.4",
-    "@storybook/cli": "^5.2.4",
-    "@storybook/preset-typescript": "^3.0.0",
-    "@storybook/react": "^5.2.4",
-    "@svgr/rollup": "^5.3.1",
-    "@testing-library/react": "^10.0.3",
-    "@types/jest": "25.2.2",
-    "@types/node": "14.0.3",
-    "@types/react": "16.9.35",
-    "@types/react-dom": "16.9.8",
-    "@types/react-test-renderer": "^16.9.1",
-    "@types/storybook__addon-info": "^5.2.1",
-    "@types/storybook__react": "^5.2.1",
-    "@types/styled-components": "^5.1.0",
-    "@types/webfontloader": "^1.6.29",
-    "@typescript-eslint/eslint-plugin": "^3.0.0",
-    "@typescript-eslint/parser": "^3.0.0",
-    "add": "^2.0.6",
-    "eslint": "^6.6.0",
-    "eslint-config-prettier": "^6.5.0",
-    "eslint-config-react-app": "^5.0.2",
-    "eslint-plugin-flowtype": "^5.0.0",
-    "eslint-plugin-import": "2.x",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-prettier": "^3.1.1",
-    "eslint-plugin-react": "^7.16.0",
-    "eslint-plugin-react-hooks": "^4.0.0",
-    "fs-extra": "^9.0.0",
-    "gh-pages": "^3.0.0",
-    "glob": "^7.1.6",
-    "husky": "^4.2.5",
-    "jest": "^25.4.0",
-    "jest-dom": "^4.0.0",
-    "lint-staged": "^10.1.7",
-    "prettier": "^2.0.5",
-    "react-docgen-typescript-loader": "^3.3.0",
-    "react-test-renderer": "^16.11.0",
-    "rollup": "^2.12.1",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-copy": "^3.1.0",
-    "rollup-plugin-json": "^4.0.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-peer-deps-external": "^2.2.0",
-    "rollup-plugin-postcss": "^3.1.1",
-    "rollup-plugin-replace": "^2.2.0",
-    "rollup-plugin-sourcemaps": "^0.6.0",
-    "rollup-plugin-terser": "^6.0.0",
-    "rollup-plugin-typescript2": "^0.27.0",
-    "rollup-plugin-url": "^3.0.1",
-    "storybook-addon-jsx": "^7.1.6",
-    "storybook-addon-react-docgen": "^1.2.28",
-    "stylelint": "^13.3.3",
-    "stylelint-config-styled-components": "^0.1.1",
-    "ts-jest": "^26.0.0",
-    "typescript": "^3.7.4",
-    "yarn": "^1.22.0"
+    "@eslint/js": "^9.9.0",
+    "@storybook/addon-essentials": "^8.5.6",
+    "@storybook/addon-interactions": "^8.5.6",
+    "@storybook/addon-links": "^8.5.6",
+    "@storybook/blocks": "^8.5.6",
+    "@storybook/react": "^8.5.6",
+    "@storybook/react-vite": "^8.5.6",
+    "@storybook/test": "^8.5.6",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^9.9.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.9",
+    "eslint-plugin-storybook": "^0.11.2",
+    "globals": "^15.9.0",
+    "msw": "^2.3.0",
+    "msw-storybook-addon": "^2.0.3",
+    "storybook": "^8.5.6",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^8.0.1",
+    "vite": "^5.4.1"
   },
-  "peerDependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "styled-components": "^4.4.0"
-  }
+  "resolutions": {
+    "jackspeak": "2.1.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  },
+  "packageManager": "yarn@4.5.0"
 }
