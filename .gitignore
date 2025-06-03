@@ -72,3 +72,4 @@ storybook-static/
 build/
 .DS_Store
 lib/
+dist/

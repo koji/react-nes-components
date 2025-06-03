@@ -18,11 +18,12 @@ export default defineConfig({
       fileName: (format) => `nes-components.${format}.js`,
     },
     rollupOptions: {
-      external: ['react', 'react-dom'],
+      external: ['react', 'react-dom', 'styled-components'],
       output: {
         globals: {
           react: 'React',
           'react-dom': 'ReactDOM',
+          'styled-components': 'styled',
         },
       },
     },
