@@ -1,43 +1,7 @@
 {
-  "compilerOptions": {
-    "module": "esnext",
-    "esModuleInterop": true,
-    "target": "es6",
-    "moduleResolution": "node",
-    "strict": false,
-    "alwaysStrict": true,
-    "removeComments": false,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "outDir": "./lib",
-    "baseUrl": ".",
-    "lib": [
-      "dom",
-      "esnext"
-    ],
-    "allowJs": false,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "importHelpers": true,
-    "noEmitOnError": false,
-    "declaration": true,
-    "declarationDir": "lib",
-    "jsx": "react",
-    "allowSyntheticDefaultImports": true,
-    "isolatedModules": true,
-    "noEmit": true
-  },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "lib",
-    "rollup.config.js",
-    "src/stories/*",
-    "src/__tests__/*",
-    "src/assets/*"
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
   ]
 }
