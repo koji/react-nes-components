@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '../assets/nes.css';
+import "nes.css/css/nes.min.css";
 
 // snsType
 // twitter, facebook, instagram, github, google

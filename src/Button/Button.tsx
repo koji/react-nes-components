@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/nes.css';
+import "nes.css/css/nes.min.css";
 
 interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   buttonType?: 'primary' | 'success' | 'warning' | 'error' | 'disabled';

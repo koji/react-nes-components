@@ -51,4 +51,3 @@ The terminal will open [localhost:9009](localhost:9009).
 You will see like below.
 
 ![storrybook](./assets/storybook.png)
-
