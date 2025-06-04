@@ -19,7 +19,8 @@
     "components",
     "NES-style"
   ],
-  "author": "koji",
+  "author": "koji kanao",
+  "homepage": "https://koji.thedev.id/",
   "private": true,
   "dependencies": {
     "nes.css": "^2.3.0",
