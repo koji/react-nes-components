@@ -1,9 +1,9 @@
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { Container } from './index';
+import { NesContainer as Container } from './index';
 
 describe('Container', () => {
   it('renders without crashing', () => {
-    render(<Container />);
+    render(<Container content="Test" />);
   });
 });

@@ -1,9 +1,9 @@
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { List } from './index';
+import { NesList as List } from './index';
 
 describe('List', () => {
   it('renders without crashing', () => {
-    render(<List items={[]} />);
+    render(<List items={[]} isDisc={true} />);
   });
 });

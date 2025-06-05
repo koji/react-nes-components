@@ -1,9 +1,9 @@
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { Avatar } from './index';
+import { NesAvatar as Avatar } from './index';
 
 describe('Avatar', () => {
   it('renders without crashing', () => {
-    render(<Avatar />);
+    render(<Avatar imgSrc="test.png" iconSize="small" />);
   });
 });

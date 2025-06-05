@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { Textarea } from './index';
+import { NesTextarea as Textarea } from './index';
 
 describe('Textarea', () => {
   it('renders without crashing', () => {

@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { Icon } from './Icon';
+import { NesIcon as Icon } from './index';
 
 describe('Icon', () => {
   it('renders without crashing', () => {

@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { Progress } from './index';
+import { NesProgress as Progress } from './index';
 
 describe('Progress', () => {
   it('renders without crashing', () => {

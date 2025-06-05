@@ -1,9 +1,9 @@
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { Input } from './index';
+import { NesInput as Input } from './index';
 
 describe('Input', () => {
   it('renders without crashing', () => {
-    render(<Input />);
+    render(<Input isInline={false} fieldType="success" label="Test" />);
   });
 });
